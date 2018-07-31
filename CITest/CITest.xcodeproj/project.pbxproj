@@ -13,7 +13,18 @@
 		3C03F2C9210F968D0009001F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C03F2C8210F968D0009001F /* Assets.xcassets */; };
 		3C03F2CC210F968D0009001F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C03F2CA210F968D0009001F /* LaunchScreen.storyboard */; };
 		3C03F2CF210F968D0009001F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03F2CE210F968D0009001F /* main.m */; };
+		3C03F2DC211036F00009001F /* CITestTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03F2DB211036F00009001F /* CITestTests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C03F2DE211036F00009001F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C03F2B4210F968B0009001F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C03F2BB210F968B0009001F;
+			remoteInfo = CITest;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3C03F2BC210F968B0009001F /* CITest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CITest.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,20 @@
 		3C03F2CB210F968D0009001F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C03F2CD210F968D0009001F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C03F2CE210F968D0009001F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C03F2D9211036F00009001F /* CITestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CITestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C03F2DB211036F00009001F /* CITestTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CITestTests.m; sourceTree = "<group>"; };
+		3C03F2DD211036F00009001F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3C03F2B9210F968B0009001F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C03F2D6211036F00009001F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				3C03F2BE210F968B0009001F /* CITest */,
+				3C03F2DA211036F00009001F /* CITestTests */,
 				3C03F2BD210F968B0009001F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				3C03F2BC210F968B0009001F /* CITest.app */,
+				3C03F2D9211036F00009001F /* CITestTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +92,15 @@
 				3C03F2CE210F968D0009001F /* main.m */,
 			);
 			path = CITest;
+			sourceTree = "<group>";
+		};
+		3C03F2DA211036F00009001F /* CITestTests */ = {
+			isa = PBXGroup;
+			children = (
+				3C03F2DB211036F00009001F /* CITestTests.m */,
+				3C03F2DD211036F00009001F /* Info.plist */,
+			);
+			path = CITestTests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +123,24 @@
 			productReference = 3C03F2BC210F968B0009001F /* CITest.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3C03F2D8211036F00009001F /* CITestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C03F2E0211036F00009001F /* Build configuration list for PBXNativeTarget "CITestTests" */;
+			buildPhases = (
+				3C03F2D5211036F00009001F /* Sources */,
+				3C03F2D6211036F00009001F /* Frameworks */,
+				3C03F2D7211036F00009001F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C03F2DF211036F00009001F /* PBXTargetDependency */,
+			);
+			name = CITestTests;
+			productName = CITestTests;
+			productReference = 3C03F2D9211036F00009001F /* CITestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +152,10 @@
 				TargetAttributes = {
 					3C03F2BB210F968B0009001F = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					3C03F2D8211036F00009001F = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3C03F2BB210F968B0009001F;
 					};
 				};
 			};
@@ -119,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				3C03F2BB210F968B0009001F /* CITest */,
+				3C03F2D8211036F00009001F /* CITestTests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +186,13 @@
 				3C03F2CC210F968D0009001F /* LaunchScreen.storyboard in Resources */,
 				3C03F2C9210F968D0009001F /* Assets.xcassets in Resources */,
 				3C03F2C7210F968B0009001F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C03F2D7211036F00009001F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +209,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C03F2D5211036F00009001F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C03F2DC211036F00009001F /* CITestTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C03F2DF211036F00009001F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C03F2BB210F968B0009001F /* CITest */;
+			targetProxy = 3C03F2DE211036F00009001F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3C03F2C5210F968B0009001F /* Main.storyboard */ = {
@@ -201,9 +279,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: limei cai (YT3KP6G5Z3)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = U5LAHK8PW6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -223,7 +303,9 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "299ea0c4-71e1-468a-b202-55dda14c73b8";
 				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = NO;
 			};
 			name = Debug;
 		};
@@ -259,9 +341,11 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: limei cai (YT3KP6G5Z3)";
+				CODE_SIGN_STYLE = Manual;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = U5LAHK8PW6;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
@@ -274,6 +358,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "299ea0c4-71e1-468a-b202-55dda14c73b8";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -286,13 +371,14 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = U5LAHK8PW6;
 				INFOPLIST_FILE = CITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tz.cn.CITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "db2effda-420e-4046-b35d-0e954bb575b2";
+				PROVISIONING_PROFILE = "299ea0c4-71e1-468a-b202-55dda14c73b8";
 				PROVISIONING_PROFILE_SPECIFIER = CITest_Dev_Profile;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -305,15 +391,54 @@
 				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = U5LAHK8PW6;
 				INFOPLIST_FILE = CITest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tz.cn.CITest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "db2effda-420e-4046-b35d-0e954bb575b2";
+				PROVISIONING_PROFILE = "299ea0c4-71e1-468a-b202-55dda14c73b8";
 				PROVISIONING_PROFILE_SPECIFIER = CITest_Dev_Profile;
 				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3C03F2E1211036F00009001F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5LAHK8PW6;
+				INFOPLIST_FILE = CITestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tz.CITestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CITest.app/CITest";
+			};
+			name = Debug;
+		};
+		3C03F2E2211036F00009001F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5LAHK8PW6;
+				INFOPLIST_FILE = CITestTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tz.CITestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CITest.app/CITest";
 			};
 			name = Release;
 		};
@@ -334,6 +459,15 @@
 			buildConfigurations = (
 				3C03F2D3210F968D0009001F /* Debug */,
 				3C03F2D4210F968D0009001F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C03F2E0211036F00009001F /* Build configuration list for PBXNativeTarget "CITestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C03F2E1211036F00009001F /* Debug */,
+				3C03F2E2211036F00009001F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

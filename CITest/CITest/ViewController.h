@@ -11,5 +11,8 @@
 @interface ViewController : UIViewController
 
 
+/// 接口
+- (int) add: (int)a with:(int)b;
+
 @end
 

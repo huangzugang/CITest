@@ -25,5 +25,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (int) add: (int)a with:(int)b {
+    return a + b;
+}
+
 
 @end
