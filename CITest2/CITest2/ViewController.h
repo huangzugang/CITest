@@ -10,6 +10,7 @@
 
 @interface ViewController : UIViewController
 
+- (int) sum: (int) a with:(int)b;
 
 @end
 

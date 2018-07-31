@@ -13,7 +13,18 @@
 		3C03F2F92110455B0009001F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C03F2F82110455B0009001F /* Assets.xcassets */; };
 		3C03F2FC2110455B0009001F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3C03F2FA2110455B0009001F /* LaunchScreen.storyboard */; };
 		3C03F2FF2110455B0009001F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03F2FE2110455B0009001F /* main.m */; };
+		3C03F30C211049020009001F /* CITest2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C03F30B211049020009001F /* CITest2Tests.m */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3C03F30E211049020009001F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C03F2E42110455A0009001F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C03F2EB2110455A0009001F;
+			remoteInfo = CITest2;
+		};
+/* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
 		3C03F2EC2110455A0009001F /* CITest2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CITest2.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -26,10 +37,20 @@
 		3C03F2FB2110455B0009001F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3C03F2FD2110455B0009001F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3C03F2FE2110455B0009001F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		3C03F309211049020009001F /* CITest2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CITest2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3C03F30B211049020009001F /* CITest2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CITest2Tests.m; sourceTree = "<group>"; };
+		3C03F30D211049020009001F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		3C03F2E92110455A0009001F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C03F306211049020009001F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -43,6 +64,7 @@
 			isa = PBXGroup;
 			children = (
 				3C03F2EE2110455A0009001F /* CITest2 */,
+				3C03F30A211049020009001F /* CITest2Tests */,
 				3C03F2ED2110455A0009001F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -51,6 +73,7 @@
 			isa = PBXGroup;
 			children = (
 				3C03F2EC2110455A0009001F /* CITest2.app */,
+				3C03F309211049020009001F /* CITest2Tests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,6 +92,15 @@
 				3C03F2FE2110455B0009001F /* main.m */,
 			);
 			path = CITest2;
+			sourceTree = "<group>";
+		};
+		3C03F30A211049020009001F /* CITest2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				3C03F30B211049020009001F /* CITest2Tests.m */,
+				3C03F30D211049020009001F /* Info.plist */,
+			);
+			path = CITest2Tests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -91,6 +123,24 @@
 			productReference = 3C03F2EC2110455A0009001F /* CITest2.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3C03F308211049020009001F /* CITest2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3C03F310211049020009001F /* Build configuration list for PBXNativeTarget "CITest2Tests" */;
+			buildPhases = (
+				3C03F305211049020009001F /* Sources */,
+				3C03F306211049020009001F /* Frameworks */,
+				3C03F307211049020009001F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3C03F30F211049020009001F /* PBXTargetDependency */,
+			);
+			name = CITest2Tests;
+			productName = CITest2Tests;
+			productReference = 3C03F309211049020009001F /* CITest2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -102,6 +152,10 @@
 				TargetAttributes = {
 					3C03F2EB2110455A0009001F = {
 						CreatedOnToolsVersion = 9.4.1;
+					};
+					3C03F308211049020009001F = {
+						CreatedOnToolsVersion = 9.4.1;
+						TestTargetID = 3C03F2EB2110455A0009001F;
 					};
 				};
 			};
@@ -119,6 +173,7 @@
 			projectRoot = "";
 			targets = (
 				3C03F2EB2110455A0009001F /* CITest2 */,
+				3C03F308211049020009001F /* CITest2Tests */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +186,13 @@
 				3C03F2FC2110455B0009001F /* LaunchScreen.storyboard in Resources */,
 				3C03F2F92110455B0009001F /* Assets.xcassets in Resources */,
 				3C03F2F72110455A0009001F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3C03F307211049020009001F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,7 +209,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3C03F305211049020009001F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3C03F30C211049020009001F /* CITest2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3C03F30F211049020009001F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C03F2EB2110455A0009001F /* CITest2 */;
+			targetProxy = 3C03F30E211049020009001F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3C03F2F52110455A0009001F /* Main.storyboard */ = {
@@ -317,6 +395,44 @@
 			};
 			name = Release;
 		};
+		3C03F311211049020009001F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5LAHK8PW6;
+				INFOPLIST_FILE = CITest2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tz.CITest2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CITest2.app/CITest2";
+			};
+			name = Debug;
+		};
+		3C03F312211049020009001F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = U5LAHK8PW6;
+				INFOPLIST_FILE = CITest2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tz.CITest2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CITest2.app/CITest2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -334,6 +450,15 @@
 			buildConfigurations = (
 				3C03F3032110455B0009001F /* Debug */,
 				3C03F3042110455B0009001F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3C03F310211049020009001F /* Build configuration list for PBXNativeTarget "CITest2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3C03F311211049020009001F /* Debug */,
+				3C03F312211049020009001F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
