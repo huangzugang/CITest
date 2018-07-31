@@ -33,7 +33,7 @@
     int result = [self.vc sum:a with:b];
     
     // Then
-    XCTAssertTrue(result == 10, @"测试失败");
+    XCTAssertTrue(result == 11, @"测试失败");
 }
 
 - (void)testPerformanceExample {
